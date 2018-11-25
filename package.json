@@ -1,0 +1,27 @@
+{
+  "name": "ee-book-docs",
+  "version": "0.0.1",
+  "description": "ee-book docs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "epub",
+    "e-book"
+  ],
+  "author": "knarfeh",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.14.4"
+  }
+}

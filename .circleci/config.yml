@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build:
+    branches:
+      ignore:
+        - gh-pages
+    working_directory: ~/eebook
+    docker:
+      - image: circleci/node:8.11-stretch
+    steps:
+      - checkout
+      - run:
+          name: pre install
+          command: 'sudo npm install'
+      - run:
+          name: docs
+          command: ./deploy.sh
